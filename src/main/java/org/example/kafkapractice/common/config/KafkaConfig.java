@@ -54,7 +54,7 @@ public class KafkaConfig {
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
 
         // 이 Consumer가 속할 그룹 아이디
-        props.put(ConsumerConfig.GROUP_ID_CONFIG, "simple-string-group");
+        props.put(ConsumerConfig.GROUP_ID_CONFIG, "simple-group");
 
         // key, value를 문자열로 역직렬화
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);

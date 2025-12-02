@@ -9,11 +9,10 @@ import org.springframework.stereotype.Service;
 public class SimpleMessageProducer {
 
     private static final String TOPIC_SIMPLE = "simple-messages";
-    private static final String TOPIC_ORDER = "order";
 
     private final KafkaTemplate<String, String> stringStringKafkaTemplate;
 
     public void send(String message) {
-        stringStringKafkaTemplate.send(TOPIC_ORDER, message);
+        stringStringKafkaTemplate.send(TOPIC_SIMPLE, message);
     }
 }
